@@ -10,6 +10,7 @@ require 'octokit/repository'
 require 'octokit/user'
 require 'octokit/organization'
 require 'octokit/preview'
+require 'octokit/client/actions'
 require 'octokit/client/apps'
 require 'octokit/client/authorizations'
 require 'octokit/client/checks'
@@ -71,6 +72,7 @@ module Octokit
     include Octokit::Connection
     include Octokit::Preview
     include Octokit::Warnable
+    include Octokit::Client::Actions
     include Octokit::Client::Authorizations
     include Octokit::Client::Checks
     include Octokit::Client::Commits
