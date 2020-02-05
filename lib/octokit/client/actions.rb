@@ -199,7 +199,7 @@ module Octokit
       # @option options [String] :status Filter by check run status (i.e. success)
       # @return [Sawyer::Resource] The workflow job logs
       # @see https://developer.github.com/v3/actions/workflow_runs/#list-repository-workflow-runs
-      def workflow_runs(repo, options = {})
+      def all_workflow_runs(repo, options = {})
         get "#{Repository.path repo}/actions/runs", options
       end
 
